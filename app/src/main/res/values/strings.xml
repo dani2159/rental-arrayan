@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Rental Motor Ar-Rayyan</string>
+
+    <string name="sewa_motor">Sewa Motor</string>
+    <string name="tambah">+</string>
+    <string name="_0">0</string>
+    <string name="LmSewa">-</string>
+    <string name="lama_sewa_hari">Lama Sewa (Hari)</string>
+    <string name="weekend_10">Weekend (10%)</string>
+    <string name="weekday_25">Weekday (25%)</string>
+    <string name="promo">Promo</string>
+    <string name="nama_motor">Nama Motor</string>
+    <string name="data_motor">Data Motor</string>
+    <string name="nama">Nama</string>
+    <string name="identitas_penyewa">Identitas Penyewa</string>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bg_shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wave_header" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-18dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@id/imgDate"
+                android:text=" Minggu, 29 November 2020"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/rental_motor_cimahi" />
+
+
+    <ScrollView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvDate">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="20dp">
+                        <ImageButton
+                            android:id="@+id/btnMotor"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/bg_button_primary"
+                            android:src="@drawable/motor"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Data Motor"
+                                android:textStyle="bold"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginBottom="30dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/btnPenyewa"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bg_button_primary"
+                            android:src="@drawable/user" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Data Penyewa"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginBottom="30dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="20dp">
+                        <ImageButton
+                            android:id="@+id/btnRental"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/bg_button_primary"
+                            android:src="@drawable/rental" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Data Rental"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginBottom="30dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/btnSewa"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bg_button_primary"
+                            android:src="@drawable/sewa" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sewa Rental"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginBottom="30dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_shape1"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wave_header"
+            android:rotation="180"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

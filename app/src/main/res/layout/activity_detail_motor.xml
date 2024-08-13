@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DetailMotorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:id="@+id/Imotor"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/supra" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+    <TextView
+        android:id="@+id/Tmotor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supra X 125 FI"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.56"
+            android:text="Nomor Polisi   :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Tnopol"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="D 6127 JJ"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.56"
+            android:text="Harga Sewa Motor   :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Tharga"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Rp. 100.000"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

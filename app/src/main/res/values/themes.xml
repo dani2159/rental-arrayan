@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Rentalar_rayyan" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Rentalar_rayyan" parent="Base.Theme.Rentalar_rayyan" />
+    s
+    <!-- For activities without an ActionBar -->
+    <style name="Theme.Rentalar_rayyan.NoActionBar" parent="Base.Theme.Rentalar_rayyan">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Alternative theme for specific use cases -->
+    <style name="Theme.Rentalar_rayyan.Alternate" parent="Base.Theme.Rentalar_rayyan">
+        <!-- Customize as needed -->
+    </style>
+</resources>

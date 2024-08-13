@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dns30.rentalar_rayyan">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rentalar_rayyan"
+        tools:targetApi="31">
+
+        <!-- Activities -->
+        <activity android:name=".CetakSewaActivity" />
+        <activity android:name=".Penyewa1Activity" />
+        <activity android:name=".UbahPenyewaActivity" />
+        <activity android:name=".LihatPenyewaActivity" />
+        <activity android:name=".TambahPenyewaActivity" />
+        <activity android:name=".RentalActivity" />
+        <activity android:name=".DetailMotorActivity" />
+        <activity android:name=".SewaMotorActivity" />
+        <activity android:name=".DataMotorActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Rentalar_rayyan.Alternate" />
+        <activity
+            android:name=".SplaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Rentalar_rayyan.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

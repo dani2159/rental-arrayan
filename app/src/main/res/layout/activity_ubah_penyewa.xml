@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".UbahPenyewaActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ID Penyewa"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Nama Penyewa"
+                android:maxLines="1"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etC"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:ems="0"
+                android:hint="Alamat"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etD"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="No HP"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnA2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="Kembali"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnA1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="Ubah"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

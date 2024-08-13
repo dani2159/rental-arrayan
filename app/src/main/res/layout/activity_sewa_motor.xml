@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SewaMotorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/idSewa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/identitas_penyewa"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idSewa"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/nama"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txtName" />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/idDtMbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/data_motor"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtMerk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idDtMbl"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/nama_motor"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txtMerk" />
+
+                <TextView
+                    android:id="@+id/txtPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/promo"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/promoGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPromo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbWeekDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/weekday_25"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/rbWeekEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="@string/weekend_10"
+                        android:textColor="@color/colorPrimary" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txtLmSewa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/promoGroup"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/lama_sewa_hari"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/btkurang"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/txtLmSewa"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/kotak"
+                    android:text="@string/LmSewa"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/lmsw"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/txtLmSewa"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/btkurang"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/bttambah"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/txtLmSewa"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/lmsw"
+                    android:background="@drawable/kotak"
+                    android:text="@string/tambah"
+                    android:textColor="#FFFEFE"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnSewa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="@string/sewa_motor"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
